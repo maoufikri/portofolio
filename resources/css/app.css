@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    position: sticky;
+    top: -60px; /* Mulai di luar layar */
+    background: linear-gradient(to top right, #ff80b5, #9089fc); /* Gradien warna */
+    z-index: 1000;
+    padding: 10px 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out; /* Animasi saat navbar muncul */
+  }
+
+  .navbar.show {
+    top: 0; /* Posisi navbar ketika muncul */
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: 0 20px;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+  /* Untuk membuat halaman lebih panjang */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Halaman minimal sepanjang layar */  }
+  
+  
